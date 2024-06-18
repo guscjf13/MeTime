@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F79D3E70275C23A241FBD7A /* Pods_MeTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D98920E3F3AB8B354CE83F /* Pods_MeTime.framework */; };
+		A12470312A9CEAF100CFBBF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12470302A9CEAF100CFBBF6 /* AppDelegate.swift */; };
+		A12470332A9CEAF100CFBBF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12470322A9CEAF100CFBBF6 /* SceneDelegate.swift */; };
+		A12470352A9CEAF100CFBBF6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12470342A9CEAF100CFBBF6 /* SplashViewController.swift */; };
+		A12470382A9CEAF100CFBBF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12470362A9CEAF100CFBBF6 /* Main.storyboard */; };
+		A124703A2A9CEAF200CFBBF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12470392A9CEAF200CFBBF6 /* Assets.xcassets */; };
+		A124703D2A9CEAF200CFBBF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A124703B2A9CEAF200CFBBF6 /* LaunchScreen.storyboard */; };
+		A12470462A9CF38500CFBBF6 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12470452A9CF38500CFBBF6 /* MainTabBarViewController.swift */; };
+		A12470482AA1D49100CFBBF6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12470472AA1D49100CFBBF6 /* HomeViewController.swift */; };
+		A124704A2AA1D4A200CFBBF6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12470492AA1D4A200CFBBF6 /* ListViewController.swift */; };
+		A124704C2AA1D4B900CFBBF6 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124704B2AA1D4B900CFBBF6 /* FavoriteViewController.swift */; };
+		A124704F2AA1DD2D00CFBBF6 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124704E2AA1DD2D00CFBBF6 /* UIColor + Extension.swift */; };
+		A12470522AA1DFC700CFBBF6 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12470512AA1DFC700CFBBF6 /* MainTabBar.swift */; };
+		A12470552AA1E7C900CFBBF6 /* HomeLogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12470542AA1E7C900CFBBF6 /* HomeLogoCell.swift */; };
+		A12470572AA315F100CFBBF6 /* UITableView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12470562AA315F100CFBBF6 /* UITableView + Extension.swift */; };
+		A12470592AA3224C00CFBBF6 /* HomeTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12470582AA3224C00CFBBF6 /* HomeTitleCell.swift */; };
+		A124705B2AA61E8300CFBBF6 /* HomeBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124705A2AA61E8300CFBBF6 /* HomeBannerCell.swift */; };
+		A14E3F612B7FA64400B2D00F /* PagingCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E3F602B7FA64400B2D00F /* PagingCondition.swift */; };
+		A14E3F632B7FAA9600B2D00F /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E3F622B7FAA9600B2D00F /* String + Extension.swift */; };
+		A14E3F692B89C36A00B2D00F /* MeTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A14E3F672B89C36A00B2D00F /* MeTime.xcdatamodeld */; };
+		A175E4F82AA64825009BC92C /* HomePhraseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E4F72AA64825009BC92C /* HomePhraseCell.swift */; };
+		A175E4FA2AB216DA009BC92C /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E4F92AB216DA009BC92C /* ListHeaderView.swift */; };
+		A175E4FC2AB4B3D4009BC92C /* ListBeverageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E4FB2AB4B3D4009BC92C /* ListBeverageCell.swift */; };
+		A175E4FE2AB59F4D009BC92C /* ListReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E4FD2AB59F4D009BC92C /* ListReactionView.swift */; };
+		A175E5002AB87DE1009BC92C /* MainTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E4FF2AB87DE1009BC92C /* MainTitleView.swift */; };
+		A175E5022AB8816E009BC92C /* BeverageTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E5012AB8816E009BC92C /* BeverageTabBar.swift */; };
+		A175E5042AB8A206009BC92C /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E5032AB8A206009BC92C /* UIStackView + Extension.swift */; };
+		A175E5062ABF2337009BC92C /* HomeBeverageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E5052ABF2337009BC92C /* HomeBeverageCell.swift */; };
+		A175E5082ABF2642009BC92C /* UICollectionView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E5072ABF2642009BC92C /* UICollectionView + Extension.swift */; };
+		A175E50A2AE54048009BC92C /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E5092AE54048009BC92C /* FilterViewController.swift */; };
+		A175E50C2AE945FC009BC92C /* PriceFilterVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E50B2AE945FC009BC92C /* PriceFilterVIewController.swift */; };
+		A175E50E2AEBDBAD009BC92C /* ListFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E50D2AEBDBAD009BC92C /* ListFilterCell.swift */; };
+		A175E5102AEBEA88009BC92C /* PriceFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E50F2AEBEA88009BC92C /* PriceFilterView.swift */; };
+		A175E5142AEBF89F009BC92C /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E5132AEBF89F009BC92C /* UIViewController + Extension.swift */; };
+		A175E5162AECB7B0009BC92C /* CapacityFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E5152AECB7B0009BC92C /* CapacityFilterViewController.swift */; };
+		A175E5182AECB9DC009BC92C /* FilterTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175E5172AECB9DC009BC92C /* FilterTextCell.swift */; };
+		A1831C1A2B00CA17007BE2E7 /* FlavorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C192B00CA17007BE2E7 /* FlavorFilterViewController.swift */; };
+		A1831C1C2B00CB26007BE2E7 /* FlavorFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C1B2B00CB26007BE2E7 /* FlavorFilterView.swift */; };
+		A1831C1E2B0651F5007BE2E7 /* BeverageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C1D2B0651F5007BE2E7 /* BeverageDetailViewController.swift */; };
+		A1831C202B06550A007BE2E7 /* BeverageThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C1F2B06550A007BE2E7 /* BeverageThumbnailCell.swift */; };
+		A1831C222B06573B007BE2E7 /* BeverageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C212B06573B007BE2E7 /* BeverageTitleCell.swift */; };
+		A1831C242B066B7F007BE2E7 /* BeverageShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C232B066B7F007BE2E7 /* BeverageShopCell.swift */; };
+		A1831C262B067765007BE2E7 /* BeverageEvaluationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C252B067765007BE2E7 /* BeverageEvaluationCell.swift */; };
+		A1831C282B07AD88007BE2E7 /* BeverageLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C272B07AD88007BE2E7 /* BeverageLikeCell.swift */; };
+		A1831C2A2B07B04A007BE2E7 /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C292B07B04A007BE2E7 /* NavigationTitleView.swift */; };
+		A1831C2C2B07B3D8007BE2E7 /* KeywordLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C2B2B07B3D8007BE2E7 /* KeywordLabel.swift */; };
+		A1831C2E2B07BF92007BE2E7 /* Notification + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C2D2B07BF92007BE2E7 /* Notification + Extension.swift */; };
+		A1831C302B07CBD2007BE2E7 /* BeverageTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C2F2B07CBD2007BE2E7 /* BeverageTableViewHeaderView.swift */; };
+		A1831C322B07D635007BE2E7 /* OrderTypeFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C312B07D635007BE2E7 /* OrderTypeFilterViewController.swift */; };
+		A1831C362B09BE0F007BE2E7 /* BeverageCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C352B09BE0F007BE2E7 /* BeverageCommentCell.swift */; };
+		A1831C382B09ED5F007BE2E7 /* BeverageCommentRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C372B09ED5F007BE2E7 /* BeverageCommentRowCell.swift */; };
+		A1831C3A2B09EFEF007BE2E7 /* BeverageWriteCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C392B09EFEF007BE2E7 /* BeverageWriteCommentCell.swift */; };
+		A1831C422B1244EA007BE2E7 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C412B1244EA007BE2E7 /* CommentsViewController.swift */; };
+		A1831C442B125BD2007BE2E7 /* BeverageWineStyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C432B125BD2007BE2E7 /* BeverageWineStyleCell.swift */; };
+		A1831C462B1E2BE6007BE2E7 /* FavoriteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C452B1E2BE6007BE2E7 /* FavoriteHeaderView.swift */; };
+		A1831C4F2B41D220007BE2E7 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831C4E2B41D220007BE2E7 /* CoreData.swift */; };
+		A1E45BF12B41DC1F006F0DCD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E45BF02B41DC1F006F0DCD /* NetworkManager.swift */; };
+		A1E45BF52B76064E006F0DCD /* Beverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E45BF42B76064E006F0DCD /* Beverage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15D98920E3F3AB8B354CE83F /* Pods_MeTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8257930448D4551DE6868FF5 /* Pods-MeTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeTime.debug.xcconfig"; path = "Target Support Files/Pods-MeTime/Pods-MeTime.debug.xcconfig"; sourceTree = "<group>"; };
+		8778F89F54D8B7C159FE6A94 /* Pods-MeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeTime.release.xcconfig"; path = "Target Support Files/Pods-MeTime/Pods-MeTime.release.xcconfig"; sourceTree = "<group>"; };
+		A124702D2A9CEAF100CFBBF6 /* MeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12470302A9CEAF100CFBBF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A12470322A9CEAF100CFBBF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A12470342A9CEAF100CFBBF6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A12470372A9CEAF100CFBBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A12470392A9CEAF200CFBBF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A124703C2A9CEAF200CFBBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A124703E2A9CEAF200CFBBF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12470452A9CF38500CFBBF6 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		A12470472AA1D49100CFBBF6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A12470492AA1D4A200CFBBF6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		A124704B2AA1D4B900CFBBF6 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		A124704E2AA1DD2D00CFBBF6 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		A12470512AA1DFC700CFBBF6 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		A12470542AA1E7C900CFBBF6 /* HomeLogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLogoCell.swift; sourceTree = "<group>"; };
+		A12470562AA315F100CFBBF6 /* UITableView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView + Extension.swift"; sourceTree = "<group>"; };
+		A12470582AA3224C00CFBBF6 /* HomeTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleCell.swift; sourceTree = "<group>"; };
+		A124705A2AA61E8300CFBBF6 /* HomeBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCell.swift; sourceTree = "<group>"; };
+		A14E3F602B7FA64400B2D00F /* PagingCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCondition.swift; sourceTree = "<group>"; };
+		A14E3F622B7FAA9600B2D00F /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		A14E3F682B89C36A00B2D00F /* MeTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeTime.xcdatamodel; sourceTree = "<group>"; };
+		A175E4F72AA64825009BC92C /* HomePhraseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePhraseCell.swift; sourceTree = "<group>"; };
+		A175E4F92AB216DA009BC92C /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		A175E4FB2AB4B3D4009BC92C /* ListBeverageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBeverageCell.swift; sourceTree = "<group>"; };
+		A175E4FD2AB59F4D009BC92C /* ListReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReactionView.swift; sourceTree = "<group>"; };
+		A175E4FF2AB87DE1009BC92C /* MainTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitleView.swift; sourceTree = "<group>"; };
+		A175E5012AB8816E009BC92C /* BeverageTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageTabBar.swift; sourceTree = "<group>"; };
+		A175E5032AB8A206009BC92C /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		A175E5052ABF2337009BC92C /* HomeBeverageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBeverageCell.swift; sourceTree = "<group>"; };
+		A175E5072ABF2642009BC92C /* UICollectionView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extension.swift"; sourceTree = "<group>"; };
+		A175E5092AE54048009BC92C /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		A175E50B2AE945FC009BC92C /* PriceFilterVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFilterVIewController.swift; sourceTree = "<group>"; };
+		A175E50D2AEBDBAD009BC92C /* ListFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFilterCell.swift; sourceTree = "<group>"; };
+		A175E50F2AEBEA88009BC92C /* PriceFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFilterView.swift; sourceTree = "<group>"; };
+		A175E5132AEBF89F009BC92C /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		A175E5152AECB7B0009BC92C /* CapacityFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityFilterViewController.swift; sourceTree = "<group>"; };
+		A175E5172AECB9DC009BC92C /* FilterTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTextCell.swift; sourceTree = "<group>"; };
+		A1831C192B00CA17007BE2E7 /* FlavorFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorFilterViewController.swift; sourceTree = "<group>"; };
+		A1831C1B2B00CB26007BE2E7 /* FlavorFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorFilterView.swift; sourceTree = "<group>"; };
+		A1831C1D2B0651F5007BE2E7 /* BeverageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageDetailViewController.swift; sourceTree = "<group>"; };
+		A1831C1F2B06550A007BE2E7 /* BeverageThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageThumbnailCell.swift; sourceTree = "<group>"; };
+		A1831C212B06573B007BE2E7 /* BeverageTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageTitleCell.swift; sourceTree = "<group>"; };
+		A1831C232B066B7F007BE2E7 /* BeverageShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageShopCell.swift; sourceTree = "<group>"; };
+		A1831C252B067765007BE2E7 /* BeverageEvaluationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageEvaluationCell.swift; sourceTree = "<group>"; };
+		A1831C272B07AD88007BE2E7 /* BeverageLikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageLikeCell.swift; sourceTree = "<group>"; };
+		A1831C292B07B04A007BE2E7 /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
+		A1831C2B2B07B3D8007BE2E7 /* KeywordLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordLabel.swift; sourceTree = "<group>"; };
+		A1831C2D2B07BF92007BE2E7 /* Notification + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification + Extension.swift"; sourceTree = "<group>"; };
+		A1831C2F2B07CBD2007BE2E7 /* BeverageTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageTableViewHeaderView.swift; sourceTree = "<group>"; };
+		A1831C312B07D635007BE2E7 /* OrderTypeFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeFilterViewController.swift; sourceTree = "<group>"; };
+		A1831C352B09BE0F007BE2E7 /* BeverageCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageCommentCell.swift; sourceTree = "<group>"; };
+		A1831C372B09ED5F007BE2E7 /* BeverageCommentRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageCommentRowCell.swift; sourceTree = "<group>"; };
+		A1831C392B09EFEF007BE2E7 /* BeverageWriteCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageWriteCommentCell.swift; sourceTree = "<group>"; };
+		A1831C412B1244EA007BE2E7 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		A1831C432B125BD2007BE2E7 /* BeverageWineStyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageWineStyleCell.swift; sourceTree = "<group>"; };
+		A1831C452B1E2BE6007BE2E7 /* FavoriteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHeaderView.swift; sourceTree = "<group>"; };
+		A1831C4E2B41D220007BE2E7 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		A1E45BF02B41DC1F006F0DCD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A1E45BF42B76064E006F0DCD /* Beverage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beverage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A124702A2A9CEAF100CFBBF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F79D3E70275C23A241FBD7A /* Pods_MeTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A12470242A9CEAF100CFBBF6 = {
+			isa = PBXGroup;
+			children = (
+				A124702F2A9CEAF100CFBBF6 /* MeTime */,
+				A124702E2A9CEAF100CFBBF6 /* Products */,
+				A77CC0FC48197AF0C6AB946F /* Pods */,
+				DA344B69B3C82228901A144B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A124702E2A9CEAF100CFBBF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A124702D2A9CEAF100CFBBF6 /* MeTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A124702F2A9CEAF100CFBBF6 /* MeTime */ = {
+			isa = PBXGroup;
+			children = (
+				A1E45BEF2B41DC13006F0DCD /* Network */,
+				A1E45BEE2B41DBFD006F0DCD /* Model */,
+				A1831C4D2B41D1FB007BE2E7 /* CoreData */,
+				A124704D2AA1DD2100CFBBF6 /* Extension */,
+				A12470442A9CF37400CFBBF6 /* ViewController */,
+				A12470502AA1DFAF00CFBBF6 /* View */,
+				A12470532AA1E7B600CFBBF6 /* Cell */,
+				A12470302A9CEAF100CFBBF6 /* AppDelegate.swift */,
+				A12470322A9CEAF100CFBBF6 /* SceneDelegate.swift */,
+				A12470362A9CEAF100CFBBF6 /* Main.storyboard */,
+				A12470392A9CEAF200CFBBF6 /* Assets.xcassets */,
+				A124703B2A9CEAF200CFBBF6 /* LaunchScreen.storyboard */,
+				A124703E2A9CEAF200CFBBF6 /* Info.plist */,
+			);
+			path = MeTime;
+			sourceTree = "<group>";
+		};
+		A12470442A9CF37400CFBBF6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A12470342A9CEAF100CFBBF6 /* SplashViewController.swift */,
+				A12470452A9CF38500CFBBF6 /* MainTabBarViewController.swift */,
+				A12470472AA1D49100CFBBF6 /* HomeViewController.swift */,
+				A12470492AA1D4A200CFBBF6 /* ListViewController.swift */,
+				A124704B2AA1D4B900CFBBF6 /* FavoriteViewController.swift */,
+				A175E5092AE54048009BC92C /* FilterViewController.swift */,
+				A1831C312B07D635007BE2E7 /* OrderTypeFilterViewController.swift */,
+				A175E50B2AE945FC009BC92C /* PriceFilterVIewController.swift */,
+				A175E5152AECB7B0009BC92C /* CapacityFilterViewController.swift */,
+				A1831C192B00CA17007BE2E7 /* FlavorFilterViewController.swift */,
+				A1831C1D2B0651F5007BE2E7 /* BeverageDetailViewController.swift */,
+				A1831C412B1244EA007BE2E7 /* CommentsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A124704D2AA1DD2100CFBBF6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A124704E2AA1DD2D00CFBBF6 /* UIColor + Extension.swift */,
+				A12470562AA315F100CFBBF6 /* UITableView + Extension.swift */,
+				A175E5072ABF2642009BC92C /* UICollectionView + Extension.swift */,
+				A175E5032AB8A206009BC92C /* UIStackView + Extension.swift */,
+				A175E5132AEBF89F009BC92C /* UIViewController + Extension.swift */,
+				A1831C2D2B07BF92007BE2E7 /* Notification + Extension.swift */,
+				A14E3F622B7FAA9600B2D00F /* String + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A12470502AA1DFAF00CFBBF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A12470512AA1DFC700CFBBF6 /* MainTabBar.swift */,
+				A175E4FF2AB87DE1009BC92C /* MainTitleView.swift */,
+				A175E4F92AB216DA009BC92C /* ListHeaderView.swift */,
+				A1831C2F2B07CBD2007BE2E7 /* BeverageTableViewHeaderView.swift */,
+				A175E4FD2AB59F4D009BC92C /* ListReactionView.swift */,
+				A175E5012AB8816E009BC92C /* BeverageTabBar.swift */,
+				A175E50F2AEBEA88009BC92C /* PriceFilterView.swift */,
+				A1831C1B2B00CB26007BE2E7 /* FlavorFilterView.swift */,
+				A1831C292B07B04A007BE2E7 /* NavigationTitleView.swift */,
+				A1831C2B2B07B3D8007BE2E7 /* KeywordLabel.swift */,
+				A1831C452B1E2BE6007BE2E7 /* FavoriteHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A12470532AA1E7B600CFBBF6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A12470542AA1E7C900CFBBF6 /* HomeLogoCell.swift */,
+				A12470582AA3224C00CFBBF6 /* HomeTitleCell.swift */,
+				A124705A2AA61E8300CFBBF6 /* HomeBannerCell.swift */,
+				A175E4F72AA64825009BC92C /* HomePhraseCell.swift */,
+				A175E5052ABF2337009BC92C /* HomeBeverageCell.swift */,
+				A175E4FB2AB4B3D4009BC92C /* ListBeverageCell.swift */,
+				A175E50D2AEBDBAD009BC92C /* ListFilterCell.swift */,
+				A175E5172AECB9DC009BC92C /* FilterTextCell.swift */,
+				A1831C1F2B06550A007BE2E7 /* BeverageThumbnailCell.swift */,
+				A1831C212B06573B007BE2E7 /* BeverageTitleCell.swift */,
+				A1831C232B066B7F007BE2E7 /* BeverageShopCell.swift */,
+				A1831C432B125BD2007BE2E7 /* BeverageWineStyleCell.swift */,
+				A1831C252B067765007BE2E7 /* BeverageEvaluationCell.swift */,
+				A1831C272B07AD88007BE2E7 /* BeverageLikeCell.swift */,
+				A1831C352B09BE0F007BE2E7 /* BeverageCommentCell.swift */,
+				A1831C372B09ED5F007BE2E7 /* BeverageCommentRowCell.swift */,
+				A1831C392B09EFEF007BE2E7 /* BeverageWriteCommentCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A1831C4D2B41D1FB007BE2E7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A1831C4E2B41D220007BE2E7 /* CoreData.swift */,
+				A14E3F672B89C36A00B2D00F /* MeTime.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A1E45BEE2B41DBFD006F0DCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1E45BF42B76064E006F0DCD /* Beverage.swift */,
+				A14E3F602B7FA64400B2D00F /* PagingCondition.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1E45BEF2B41DC13006F0DCD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A1E45BF02B41DC1F006F0DCD /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A77CC0FC48197AF0C6AB946F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8257930448D4551DE6868FF5 /* Pods-MeTime.debug.xcconfig */,
+				8778F89F54D8B7C159FE6A94 /* Pods-MeTime.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA344B69B3C82228901A144B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15D98920E3F3AB8B354CE83F /* Pods_MeTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A124702C2A9CEAF100CFBBF6 /* MeTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12470412A9CEAF200CFBBF6 /* Build configuration list for PBXNativeTarget "MeTime" */;
+			buildPhases = (
+				60BAE942F51F66069B3D4B83 /* [CP] Check Pods Manifest.lock */,
+				A12470292A9CEAF100CFBBF6 /* Sources */,
+				A124702A2A9CEAF100CFBBF6 /* Frameworks */,
+				A124702B2A9CEAF100CFBBF6 /* Resources */,
+				474F1BBC928138DD214EDEBE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeTime;
+			productName = MeTime;
+			productReference = A124702D2A9CEAF100CFBBF6 /* MeTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A12470252A9CEAF100CFBBF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A124702C2A9CEAF100CFBBF6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A12470282A9CEAF100CFBBF6 /* Build configuration list for PBXProject "MeTime" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A12470242A9CEAF100CFBBF6;
+			productRefGroup = A124702E2A9CEAF100CFBBF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A124702C2A9CEAF100CFBBF6 /* MeTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A124702B2A9CEAF100CFBBF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A124703D2A9CEAF200CFBBF6 /* LaunchScreen.storyboard in Resources */,
+				A124703A2A9CEAF200CFBBF6 /* Assets.xcassets in Resources */,
+				A12470382A9CEAF100CFBBF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		474F1BBC928138DD214EDEBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeTime/Pods-MeTime-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeTime/Pods-MeTime-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeTime/Pods-MeTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60BAE942F51F66069B3D4B83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A12470292A9CEAF100CFBBF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12470522AA1DFC700CFBBF6 /* MainTabBar.swift in Sources */,
+				A1831C282B07AD88007BE2E7 /* BeverageLikeCell.swift in Sources */,
+				A1831C2E2B07BF92007BE2E7 /* Notification + Extension.swift in Sources */,
+				A175E5022AB8816E009BC92C /* BeverageTabBar.swift in Sources */,
+				A12470482AA1D49100CFBBF6 /* HomeViewController.swift in Sources */,
+				A1831C322B07D635007BE2E7 /* OrderTypeFilterViewController.swift in Sources */,
+				A1E45BF52B76064E006F0DCD /* Beverage.swift in Sources */,
+				A175E5042AB8A206009BC92C /* UIStackView + Extension.swift in Sources */,
+				A1831C2C2B07B3D8007BE2E7 /* KeywordLabel.swift in Sources */,
+				A1831C442B125BD2007BE2E7 /* BeverageWineStyleCell.swift in Sources */,
+				A175E4FA2AB216DA009BC92C /* ListHeaderView.swift in Sources */,
+				A12470352A9CEAF100CFBBF6 /* SplashViewController.swift in Sources */,
+				A1831C1E2B0651F5007BE2E7 /* BeverageDetailViewController.swift in Sources */,
+				A175E4FE2AB59F4D009BC92C /* ListReactionView.swift in Sources */,
+				A175E50A2AE54048009BC92C /* FilterViewController.swift in Sources */,
+				A1831C382B09ED5F007BE2E7 /* BeverageCommentRowCell.swift in Sources */,
+				A1831C422B1244EA007BE2E7 /* CommentsViewController.swift in Sources */,
+				A175E50E2AEBDBAD009BC92C /* ListFilterCell.swift in Sources */,
+				A1831C222B06573B007BE2E7 /* BeverageTitleCell.swift in Sources */,
+				A1831C1A2B00CA17007BE2E7 /* FlavorFilterViewController.swift in Sources */,
+				A175E5142AEBF89F009BC92C /* UIViewController + Extension.swift in Sources */,
+				A1831C242B066B7F007BE2E7 /* BeverageShopCell.swift in Sources */,
+				A124704F2AA1DD2D00CFBBF6 /* UIColor + Extension.swift in Sources */,
+				A1E45BF12B41DC1F006F0DCD /* NetworkManager.swift in Sources */,
+				A1831C302B07CBD2007BE2E7 /* BeverageTableViewHeaderView.swift in Sources */,
+				A1831C362B09BE0F007BE2E7 /* BeverageCommentCell.swift in Sources */,
+				A175E5082ABF2642009BC92C /* UICollectionView + Extension.swift in Sources */,
+				A124704A2AA1D4A200CFBBF6 /* ListViewController.swift in Sources */,
+				A175E5002AB87DE1009BC92C /* MainTitleView.swift in Sources */,
+				A124705B2AA61E8300CFBBF6 /* HomeBannerCell.swift in Sources */,
+				A175E50C2AE945FC009BC92C /* PriceFilterVIewController.swift in Sources */,
+				A14E3F632B7FAA9600B2D00F /* String + Extension.swift in Sources */,
+				A12470592AA3224C00CFBBF6 /* HomeTitleCell.swift in Sources */,
+				A175E5102AEBEA88009BC92C /* PriceFilterView.swift in Sources */,
+				A1831C202B06550A007BE2E7 /* BeverageThumbnailCell.swift in Sources */,
+				A1831C3A2B09EFEF007BE2E7 /* BeverageWriteCommentCell.swift in Sources */,
+				A14E3F692B89C36A00B2D00F /* MeTime.xcdatamodeld in Sources */,
+				A124704C2AA1D4B900CFBBF6 /* FavoriteViewController.swift in Sources */,
+				A1831C1C2B00CB26007BE2E7 /* FlavorFilterView.swift in Sources */,
+				A12470462A9CF38500CFBBF6 /* MainTabBarViewController.swift in Sources */,
+				A12470552AA1E7C900CFBBF6 /* HomeLogoCell.swift in Sources */,
+				A175E5162AECB7B0009BC92C /* CapacityFilterViewController.swift in Sources */,
+				A175E5062ABF2337009BC92C /* HomeBeverageCell.swift in Sources */,
+				A1831C462B1E2BE6007BE2E7 /* FavoriteHeaderView.swift in Sources */,
+				A1831C2A2B07B04A007BE2E7 /* NavigationTitleView.swift in Sources */,
+				A12470312A9CEAF100CFBBF6 /* AppDelegate.swift in Sources */,
+				A175E4F82AA64825009BC92C /* HomePhraseCell.swift in Sources */,
+				A14E3F612B7FA64400B2D00F /* PagingCondition.swift in Sources */,
+				A175E5182AECB9DC009BC92C /* FilterTextCell.swift in Sources */,
+				A12470572AA315F100CFBBF6 /* UITableView + Extension.swift in Sources */,
+				A1831C262B067765007BE2E7 /* BeverageEvaluationCell.swift in Sources */,
+				A1831C4F2B41D220007BE2E7 /* CoreData.swift in Sources */,
+				A175E4FC2AB4B3D4009BC92C /* ListBeverageCell.swift in Sources */,
+				A12470332A9CEAF100CFBBF6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A12470362A9CEAF100CFBBF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12470372A9CEAF100CFBBF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A124703B2A9CEAF200CFBBF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A124703C2A9CEAF200CFBBF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A124703F2A9CEAF200CFBBF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A12470402A9CEAF200CFBBF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A12470422A9CEAF200CFBBF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8257930448D4551DE6868FF5 /* Pods-MeTime.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UNZT4952F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeTime/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hyunchul.MeTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A12470432A9CEAF200CFBBF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8778F89F54D8B7C159FE6A94 /* Pods-MeTime.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UNZT4952F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeTime/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hyunchul.MeTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A12470282A9CEAF100CFBBF6 /* Build configuration list for PBXProject "MeTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A124703F2A9CEAF200CFBBF6 /* Debug */,
+				A12470402A9CEAF200CFBBF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12470412A9CEAF200CFBBF6 /* Build configuration list for PBXNativeTarget "MeTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12470422A9CEAF200CFBBF6 /* Debug */,
+				A12470432A9CEAF200CFBBF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A14E3F672B89C36A00B2D00F /* MeTime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A14E3F682B89C36A00B2D00F /* MeTime.xcdatamodel */,
+			);
+			currentVersion = A14E3F682B89C36A00B2D00F /* MeTime.xcdatamodel */;
+			path = MeTime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A12470252A9CEAF100CFBBF6 /* Project object */;
+}
